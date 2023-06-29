@@ -1,0 +1,145 @@
+<template>
+    <div class="d-flex flex-wrap justify-content-between">
+        <card v-for="(product,index) in products" :product="product" :gradien="setGradien(index)" class="card" />
+    </div>
+</template>
+
+<script>
+import card from "../Cellules/card.vue"
+export default {
+    name:"ProductsFront",
+    components:{card},
+    props:{
+
+    },
+    methods:{
+        setGradien(index){
+            let i = index % this.gradianColors.length
+            return this.gradianColors[i]
+        }
+    },
+    data(){
+        return{
+            gradianColors :[
+                ['#3A1C71','#FFAF7B'],
+                ['#20002c','#cbb4d4'],
+                ['#C33764','#1D2671'],
+                ['#34e89e','#0f3443'],
+                ['#44A08D','#093637'],
+                ['#200122','#6f0000'],
+                ['#4568DC','#B06AB3'],
+                ['#43C6AC','#191654'],
+                ['#43C6AC','#F8FFAE'],
+                ['#F0F2F0','#000C40'],
+                ['#E8CBC0','#636FA4'],
+                ['#3494E6','#EC6EAD'],
+                ['#67B26F','#4ca2cd'],
+                ['#F3904F','#3B4371'],
+                ['#ee0979','#ff6a00'],
+            ],
+            products:[
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest2.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest3.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest.png",
+            },
+            {
+                id:0,
+                name:"Margherita",
+                caracteristique:{
+                    size:"xxl"
+                },
+                price:"30.000ar",
+                image:"/dataImage/product/pizzaTest.png",
+            },
+
+            ]
+        }
+    }
+}
+</script>

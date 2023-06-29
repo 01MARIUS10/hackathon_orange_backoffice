@@ -7,6 +7,21 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
+    },
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+      "moduleResolution":"node",
+      "types": ["@types/vue"]
     }
-  }
 }
+
+// "compilerOptions": {
+//   "module": "esnext",
+//   "target": "esnext",
+//   "lib": ["esnext", "dom"],
+//   "strict": true,
+//   "esModuleInterop": true
+// }
